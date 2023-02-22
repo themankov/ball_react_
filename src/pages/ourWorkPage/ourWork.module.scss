@@ -1,0 +1,34 @@
+.ourWork {
+  display: grid;
+
+  justify-items: center;
+  grid-template-columns: repeat(2, 67rem);
+  grid-template-rows: repeat(2, min-content);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  justify-content: center;
+  @media (max-width: 1440px) {
+    grid-template-columns: repeat(2, 50rem);
+  }
+  @media (max-width: 1070px) {
+    grid-template-columns: repeat(2, 30rem);
+  }
+  @media (max-width: 660px) {
+    grid-template-columns: repeat(2, 15rem);
+  }
+  img {
+    object-fit: cover;
+    height: 67rem;
+    aspect-ratio: 1;
+    border-radius: 2rem;
+    @media (max-width: 1440px) {
+      height: 50rem;
+    }
+    @media (max-width: 1070px) {
+      height: 30rem;
+    }
+    @media (max-width: 660px) {
+      height: 15rem;
+    }
+  }
+}

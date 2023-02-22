@@ -1,0 +1,164 @@
+.card {
+  padding-left: 3rem;
+  @media (max-width: 480px) {
+    padding-left: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    @media (max-width: 860px) {
+      font-size: 1.5rem;
+    }
+    @media (max-width: 480px) {
+      width: 25rem;
+    }
+  }
+  &_wrapper {
+    display: flex;
+    .composition {
+      flex-basis: 60%;
+      padding: 1rem;
+      @media (max-width: 740px) {
+        flex-basis: 50%;
+      }
+      @media (max-width: 550px) {
+        flex-basis: 40%;
+      }
+      img {
+        width: 60rem;
+        aspect-ratio: 1;
+        object-fit: cover;
+        @media (max-width: 1160px) {
+          width: 40rem;
+        }
+        @media (max-width: 740px) {
+          width: 25rem;
+        }
+        @media (max-width: 590px) {
+          width: 18rem;
+        }
+      }
+    }
+    .description {
+      flex-basis: 40%;
+      @media (max-width: 740px) {
+        flex-basis: 50%;
+      }
+      .prices {
+        display: flex;
+        padding-top: 10rem;
+        gap: 3rem;
+        align-items: center;
+        @media (max-width: 740px) {
+          padding-top: 2rem;
+        }
+        @media (max-width: 480px) {
+          gap: 1.5rem;
+        }
+        span:nth-child(1) {
+          font-size: 7rem;
+          @media (max-width: 1160px) {
+            font-size: 5rem;
+          }
+          @media (max-width: 860px) {
+            font-size: 4rem;
+          }
+          @media (max-width: 550px) {
+            font-size: 3rem;
+          }
+          @media (max-width: 480px) {
+            font-size: 2rem;
+          }
+        }
+        span:nth-child(2) {
+          font-size: 3.6rem;
+          color: lightgray;
+          text-decoration: line-through;
+          @media (max-width: 1160px) {
+            font-size: 2rem;
+          }
+          @media (max-width: 860px) {
+            font-size: 1.5rem;
+          }
+          @media (max-width: 550px) {
+            font-size: 1.3rem;
+          }
+        }
+        span:nth-child(3) {
+          font-size: 2.8rem;
+          color: #ff32a1;
+          @media (max-width: 1160px) {
+            font-size: 1.8rem;
+          }
+          @media (max-width: 860px) {
+            font-size: 1.5rem;
+          }
+          @media (max-width: 550px) {
+            font-size: 1.3rem;
+          }
+        }
+      }
+      button {
+        margin-top: 3rem;
+        cursor: pointer;
+        background-color: #ff32a1;
+        font-size: 2.8rem;
+        color: white;
+        font-weight: bold;
+        padding: 2.5rem 0;
+        width: 30rem;
+        border-radius: 3rem;
+        @media (max-width: 1160px) {
+          width: 20rem;
+          font-size: 2rem;
+        }
+        @media (max-width: 860px) {
+          width: 15rem;
+          font-size: 1.5rem;
+        }
+        @media (max-width: 480px) {
+          padding: 1.5rem 0;
+        }
+      }
+      .contains {
+        padding-top: 3rem;
+        h1 {
+          font-size: 2rem;
+          font-weight: 500;
+          @media (max-width: 860px) {
+            font-size: 1.5rem;
+          }
+        }
+        ul {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          display: flex;
+
+          flex-direction: column;
+          gap: 2rem;
+          li {
+            font-size: 2rem;
+            @media (max-width: 860px) {
+              font-size: 1.5rem;
+            }
+            @media (max-width: 480px) {
+              width: 10rem;
+            }
+          }
+        }
+      }
+      .filling {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        h1,
+        span {
+          font-size: 2rem;
+          @media (max-width: 860px) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

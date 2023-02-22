@@ -1,0 +1,16 @@
+.counter {
+  display: inline-flex;
+  gap: 2rem;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  border: 2px solid black;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: 13rem;
+  svg {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+}

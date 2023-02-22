@@ -1,0 +1,107 @@
+.advertisement {
+  background-image: url(./../../assets//advertisement.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  background-color: #a1e2eb;
+  height: 53vh;
+
+  color: white;
+  padding: 3rem 0 0 2rem;
+  @media (max-width: 730px) {
+    height: 45vh;
+  }
+  @media (max-width: 690px) {
+    height: 35vh;
+  }
+  @media (max-width: 550px) {
+    height: 32vh;
+  }
+  p {
+    font-family: 'Montserrat';
+
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 8rem;
+      @media (max-width: 900px) {
+        font-size: 6rem;
+      }
+      @media (max-width: 690px) {
+        font-size: 5rem;
+      }
+      @media (max-width: 550px) {
+        font-size: 4rem;
+      }
+      @media (max-width: 460px) {
+        font-size: 2.8rem;
+      }
+    }
+    h2 {
+      font-size: 6.3rem;
+      @media (max-width: 900px) {
+        font-size: 4.3rem;
+      }
+      @media (max-width: 690px) {
+        font-size: 3.3rem;
+      }
+      @media (max-width: 550px) {
+        font-size: 2.8rem;
+      }
+      @media (max-width: 460px) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+.buttons {
+  display: flex;
+  gap: 3rem;
+  button {
+    padding: 2.5rem 0;
+    width: 20rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    cursor: pointer;
+    @media (max-width: 900px) {
+      font-size: 1.8rem;
+      padding: 2rem 0;
+      width: 15rem;
+    }
+    @media (max-width: 690px) {
+      font-size: 1.5rem;
+      padding: 1.5rem 0;
+      width: 13rem;
+    }
+    @media (max-width: 550px) {
+      font-size: 1.2rem;
+      padding: 1.2rem 0;
+      width: 11rem;
+    }
+    @media (max-width: 460px) {
+      font-size: 1.2rem;
+      padding: 1rem 0;
+      width: 9rem;
+    }
+  }
+  button:first-child {
+    background-color: white;
+    color: black;
+    transition: all 0.4s;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  button:last-child {
+    background-color: transparent;
+    color: white;
+    transition: all 0.4s;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+}

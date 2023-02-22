@@ -1,0 +1,19 @@
+.btn {
+  background-color: #fff3ff;
+  color: #c949ca;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #c949ca;
+  border-radius: 2rem;
+  padding: 2rem 0rem;
+  width: 30rem;
+  font-size: 2rem;
+
+  @media (max-width: 1430px) {
+    width: 25rem;
+  }
+  @media (max-width: 670px) {
+    width: 15rem;
+    font-size: 1rem;
+  }
+}
